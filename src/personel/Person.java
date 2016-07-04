@@ -1,39 +1,18 @@
 package personel;
 
+import java.math.BigDecimal;
+
 public abstract class Person {
 
 	String name;
-	String surname;
 	short age;
-	
-	public Person(String name, String surname, short age){
+	BigDecimal salary;
+
+	public Person(String name, short age, BigDecimal salary) {
 		this.name = name;
-		this.surname = surname;
 		this.age = age;
-	}
+		this.salary = salary;
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getSurname() {
-		return surname;
-	}
-
-	public void setSurname(String surname) {
-		this.surname = surname;
-	}
-
-	public short getAge() {
-		return age;
-	}
-
-	public void setAge(short age) {
-		this.age = age;
 	}
 	
 	
