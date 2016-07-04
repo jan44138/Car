@@ -10,4 +10,14 @@ public class Director extends Person{
 		super(name, surname, age);
 		this.salary = salary;
 	}
+
+	public BigDecimal getSalary() {
+		return salary;
+	}
+
+	public void setSalary(BigDecimal salary) {
+		this.salary = salary;
+	}
+	
+	
 }
